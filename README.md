@@ -5,8 +5,7 @@ Logic Emulation Machine
 Accumulator size varies, has carry bit, 9 and 18-bit instructions  
 Very simple mostly Boolean operations and add with carry  
 ### LEM1_9min  
-Extremely basic: do Boolean or add with carry instructions until halt instruction  
-Repeat after start signal  
+Extremely basic: does Boolean or add with carry instruction sequrence until halt instruction.  Repeat after start signal  
 ### LEM1_9
 Logic Emulation Machine with one bit accumulator and 9-bit instructions  
 Has conditional branches and subroutine stack  
