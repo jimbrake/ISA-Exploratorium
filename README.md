@@ -17,7 +17,7 @@ Indirect, autoincrement, autodecrement, and pointer plus offset
 Logic Emulation Machine with four bit accumulator and 9-bit instructions  
 Has conditional branches and subroutine stack, both binary and BCD addition    
 ### LEM4_9ptr  
-Logic Emulation Machine: one bit accumulator, nine & 18=bit instructions  
+Logic Emulation Machine: four bit accumulator, nine & 18=bit instructions  
 Both binary and BCD addition.  Has four pointer registers with four addressing modes  
 Indirect, autoincrement, autodecrement, and pointer plus offset  
 ### LEM16_18M  
