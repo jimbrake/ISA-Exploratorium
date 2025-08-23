@@ -1,7 +1,7 @@
 # ISA-Exploratorium
 Computer architecture designs of all varieties including RISC, CISC, stack and accumulator.  Many are legacy upgrades, i.e. modifications to existing architectures that increase data types, data sizes, and correct problems.
 ## LEM
-Logic Emulation Machine
+Logic Emulation Machine  
 Accumulator size varies, has carry bit, 9 and 18-bit instructions  
 Very simple mostly Boolean operations and add with carry  
 ### LEM1_9min  
@@ -28,7 +28,7 @@ Register Oreinted Instructon Set, typical RISC with 24-bit instructions
 ### ROIS24_24  
 24-bit instructions and data, 64 registers, upto 64 instruction codes    
 ### ROIS24_3sz  
-24-bit instructions, 8 16 and 24-bit data, uses all 64 instruction codes  
+24-bit instructions, 8 16 and 24-bit data, uses all 64 instruction codes.  Byte addressabilty    
 ## TROC  
 Tagged Register Oriented Computer  
 Register file has additional bits for each register: data type and additional floating-point exponent and mantissa bits  
