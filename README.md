@@ -3,19 +3,19 @@
 Computer architecture designs of all varieties including RISC, CISC, stack and accumulator.  Many are legacy upgrades, i.e. modifications to existing architectures that increase data types, data sizes, and correct problems.
 ## LEM
 Logic Emulation Machine  
-Accumulator size varies, has carry bit, 9 and 18-bit instructions  
+Accumulator size varies, has carry bit, nine and 18-bit instructions  
 Very simple mostly Boolean operations and add with carry  
 ### LEM1_9min  
 Extremely basic: does Boolean or add with carry instruction sequrence until halt instruction.  Repeat after start signal  
 ### LEM1_9
-Logic Emulation Machine with one bit accumulator and 9-bit instructions  
+Logic Emulation Machine with one bit accumulator, nine & 18-bit instructions  
 Has conditional branches and subroutine stack  
 ### LEM1_9ptr  
 Logic Emulation Machine: one bit accumulator, nine & 18-bit instructions  
 Has four pointer registers with four addressing modes  
 Indirect, autoincrement, autodecrement, and pointer plus offset  
 ### LEM4_9
-Logic Emulation Machine with four bit accumulator and 9-bit instructions  
+Logic Emulation Machine with four bit accumulator, nine & 18-bit instructions  
 Has conditional branches and subroutine stack, both binary and BCD addition    
 ### LEM4_9ptr  
 Logic Emulation Machine: four bit accumulator, nine & 18-bit instructions  
