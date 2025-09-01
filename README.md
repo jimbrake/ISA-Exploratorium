@@ -32,7 +32,7 @@ Register Oreinted Instructon Set, typical RISC with 24-bit instructions
 24-bit instructions, 8 16 and 24-bit data, uses all 64 instruction codes.  Byte addressabilty    
 ## TROC  
 Tagged Register Oriented Computer  
-Register file has additional bits for each register: data type and additional floating-point exponent and mantissa bits  
+Register file has additional bits on each register: data type & additional floating-point exponent and mantissa bits  
 Each variant supports four data types and four data sizes.  
 ### TROC16  
 Register file of 32 16-bit registers each having four tag bits: 2 type bits and 2 exponent bits  
