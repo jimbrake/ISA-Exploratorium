@@ -30,7 +30,7 @@ Memory to memory architecture
 
 ## LEM
 Logic Emulation Machine  
-Accumulator size of one for four bits, has carry bit, nine and 18-bit instructions  
+Accumulator size of one or four bits, has carry bit, nine and 18-bit instructions  
 Very simple mostly Boolean operations and add with carry  
 
 ## MAOC aka CISC  
