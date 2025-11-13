@@ -1,41 +1,59 @@
 # ISA-Exploratorium
 ## work in progess, known errors  
-Computer architecture designs of all varieties including RISC, CISC, stack and accumulator.  Many are legacy upgrades, i.e. modifications to existing architectures that increase data types, data sizes, and correct problems.
+Computer architecture designs of all varieties including RISC, CISC, stack and accumulator.  
+
+## _all_projects  
+Project files for individual designs  
+
+There has been an evolution of design criterial over time (30+ years)  
+Thus each project has a prefix giving the year of the first basic description  
+
+A complete design has:
+README.md
+A docx file containing a basic description  
+A formal doc file containing a full description of each instruction, addressing modes and memory layout  
+A xlsx file listing all the instructions and their encoding  
+A business case file giving the rational  
+A FPGA project/zip file containing RTL source, constraint file, testbench  
+
+Needless to say, only a few designs are this complete  
+And one would like to have an assembler and compiler as well  
+
+# Here are the design categories  
+
+## ALT_uPs
+Legacy upgrades, i.e. modifications to existing architectures that increase data types, data sizes, and correct problems.
+
+## BCD  
+Variable length Binary Coded Decimal arithmetic  
+Memory to memory architecture  
+
 ## LEM
 Logic Emulation Machine  
-Accumulator size varies, has carry bit, nine and 18-bit instructions  
+Accumulator size of one for four bits, has carry bit, nine and 18-bit instructions  
 Very simple mostly Boolean operations and add with carry  
-### LEM1_9min  
-Extremely basic: does Boolean or add with carry instruction sequrence until halt instruction.  Repeat after start signal  
-### LEM1_9
-Logic Emulation Machine with one bit accumulator, nine & 18-bit instructions  
-Has conditional branches and subroutine stack  
-### LEM1_9ptr  
-Logic Emulation Machine: one bit accumulator, nine & 18-bit instructions  
-Has four pointer registers with four addressing modes  
-Indirect, autoincrement, autodecrement, and pointer plus offset  
-### LEM4_9
-Logic Emulation Machine with four bit accumulator, nine & 18-bit instructions  
-Has conditional branches and subroutine stack, both binary and BCD addition    
-### LEM4_9ptr  
-Logic Emulation Machine: four bit accumulator, nine & 18-bit instructions  
-Both binary and BCD addition.  Has four pointer registers with four addressing modes  
-Indirect, autoincrement, autodecrement, and pointer plus offset  
-### LEM16_18M  
-Combination of bit field instructions and accumulator ISA  
-16-bit data memory and 18-bit instructions  
-## ROIS  
-Register Oreinted Instructon Set, typical RISC with 24-bit instructions  
-### ROIS24_24  
-24-bit instructions and data, 64 registers, upto 64 instruction codes    
-### ROIS24_3sz  
-24-bit instructions, 8 16 and 24-bit data, uses all 64 instruction codes.  Byte addressabilty    
+
+## MAOC aka CISC  
+Multi-accumulator oriented computer  
+Opertaions take place between registers and between registers and memory  
+
+## OOSM  
+One operand stack machine  
+An attempt to squeeze as much functionality out of a single stack instruction  
+Thereby improving work done per instruction and maintaining code density  
+
+## quadISA aka ALT_All  
+An attempt to provide RISC, CISC, Stack and Accumulator instructions within a single ISA  
+
+## ROIS aka ROC  
+Register Oreinted Instructon Set, typical RISC with 24-bit and larger instructions  
+Name changed to ROC (Register Oriented Computer) for better pronounciation and dramatic effect  
+
 ## TROC  
 Tagged Register Oriented Computer  
-Register file has additional bits on each register: data type & additional floating-point exponent and mantissa bits  
-Each variant supports four data types and four data sizes.  
-### TROC16  
-Register file of 32 16-bit registers each having four tag bits: 2 type bits and 2 exponent bits  
-Is a sub set of the TROC architecture supporting 16-bit instrucitons and 16-bit data only  
-### TROC24  
-Register file of 32 24-bit registers each having eight tag bits: 2 type, 2 exponent, 4 mantissa  
+Register file has additional bits on each register:
+ data type & additional floating-point exponent and mantissa/fraction bits  
+Each variant supports four data types and four data sizes  
+Various un-tagged register bit lenghts of 16, 24, 32, 36, 42, 48 and 64-bits  
+The corresponding byte sizes are        8, 8 or 12, 8, 9, 21, 8 or 12 and 8-bits  
+Instruction lengths and immediate values vary in length with 24-bit instructions dominating  
