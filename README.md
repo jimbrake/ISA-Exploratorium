@@ -73,7 +73,7 @@ No micrco-code, no data path planning
 Common sub-expressions identified by assignment to a distinct name  
 Separate register update process  
 In the case of TROC instructions defined/expressed via three nested case statements  
- Instruction size, e.g. a section for each instruction size
- Each distinct instruction with some merged  
- Each data type as needed  
+-Instruction size, e.g. a section for each instruction size  
+--Each distinct instruction with some merged  
+---Each data type as needed  
 In addition there is an outer case for state handling, mostly memory read/write states  
