@@ -13,7 +13,7 @@ There has been an evolution of design criterial over time (30+ years)
 Thus each project has a prefix giving the year of the first basic description  
 
 ### A complete design has:
-README.md
+README.md  
 A "glossy" documentation file containing a basic description  
 A formal doc file containing a full description of each instruction, addressing modes and memory layout  
 A spreadsheet file listing all the instructions and their encoding  
