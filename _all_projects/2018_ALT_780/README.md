@@ -1,6 +1,6 @@
 ## ALT-780  
 A design limiting data memory access for a single instruction to a single memory location  
-- considered the biggest obstacle to high performance  
+-considered the biggest obstacle to high performance  
 ALT-780 uses a 24-bit instruction and an eight bit prefix to specify an index register  
 A 24-bit instruction contains an 8-bit op-code, three four bit register designators  
 -and a four bit address mode  
