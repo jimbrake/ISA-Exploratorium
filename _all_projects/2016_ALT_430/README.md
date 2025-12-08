@@ -9,7 +9,7 @@ along with a larger set of operation codes
 The set of available registers is reduced to fourteen in order to support five addressing modes  
 -register  
 -register indirect  
--register indirect with pre-decrement
+-register indirect with pre-decrement  
 -register indirect with post-increment  
 -register indirect with offset value  
 Additionally there is support for immediate values within the instruction stream  
