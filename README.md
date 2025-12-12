@@ -3,6 +3,7 @@ Welcome to my collection of original computer designs
 Designs of all varieties including RISC, CISC, stack and accumulator  
 They are in various stages of completion  
 With ~six having working test benches  
+Many files have a six digit date suffix of year, month and day  
 ### A work in progess  
 Beware many of the projects and their ISAs in _all_projects are incomplete  
 Use the spreadsheet to examine their status  
