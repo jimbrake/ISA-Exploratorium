@@ -1,0 +1,59 @@
+#   Avent S6LX9 MicroBoard constraint file
+
+# Texas Instruments CDCE913 Triple-Output PLL Clock Chip
+#   Y1: 40 MHz, USER_CLOCK can be used as external configuration clock
+#   Y2: 66.667 MHz
+#   Y3: 100 MHz 
+#NET USER_CLOCK        LOC = V10 | IOSTANDARD = LVCMOS33;    # "USER_CLOCK"   # 40.000MHz
+#NET CLOCK_Y2          LOC = K15 | IOSTANDARD = LVCMOS33;    # "CLOCK_Y2"     # 66.667MHz
+NET CLOCK_Y3          LOC = C10 | IOSTANDARD = LVCMOS33;    # "CLOCK_Y3"     #100.000MHz
+
+#NET USER_CLOCK TNM_NET = USER_CLOCK;
+#TIMESPEC TS_USER_CLOCK = PERIOD USER_CLOCK 40000 kHz;   # 40.000MHz
+#NET CLOCK_Y2 TNM_NET = CLOCK_Y2;
+#TIMESPEC TS_CLOCK_Y2 = PERIOD CLOCK_Y2 66666.7 kHz;     # 66.667MHz
+NET CLOCK_Y3 TNM_NET = CLOCK_Y3;
+#TIMESPEC TS_CLOCK_Y3 = PERIOD CLOCK_Y3 100000 kHz;      #100.000MHz
+TIMESPEC TS_CLOCK_Y3 = PERIOD CLOCK_Y3   60000 kHz;      #100.000MHz
+
+# VCC AUX VOLTAGE 
+CONFIG VCCAUX=3.3;
+
+# User Reset Push Button    # pushed = high!
+#   Ignore the timing for this signal
+#   Internal pull-down required since external resistor is not populated
+NET USER_RESET        LOC = V4  | IOSTANDARD = LVCMOS33 | PULLDOWN;    # "USER_RESET"
+NET USER_RESET        TIG;
+
+# User DIP Switch x4    # ON = high
+#   Internal pull-down required since external resistor is not populated
+NET GPIO_DIP1         LOC = B3  | IOSTANDARD = LVCMOS33 | PULLDOWN;    # "GPIO_DIP1"
+NET GPIO_DIP2         LOC = A3  | IOSTANDARD = LVCMOS33 | PULLDOWN;    # "GPIO_DIP2"
+NET GPIO_DIP3         LOC = B4  | IOSTANDARD = LVCMOS33 | PULLDOWN;    # "GPIO_DIP3"
+NET GPIO_DIP4         LOC = A4  | IOSTANDARD = LVCMOS33 | PULLDOWN;    # "GPIO_DIP4"
+
+# User LEDs             # high = lit, no series resistor!			
+NET GPIO_LED1         LOC = P4  | IOSTANDARD = LVCMOS18;               # "GPIO_LED1"
+NET GPIO_LED2         LOC = L6  | IOSTANDARD = LVCMOS18;               # "GPIO_LED2"
+NET GPIO_LED3         LOC = F5  | IOSTANDARD = LVCMOS18;               # "GPIO_LED3"
+NET GPIO_LED4         LOC = C2  | IOSTANDARD = LVCMOS18;               # "GPIO_LED4"
+
+# Peripheral Modules and GPIO
+# Connector J5
+#NET PMOD1_P1          LOC = F15 | IOSTANDARD = LVCMOS33;               # "PMOD1_P1"
+#NET PMOD1_P2          LOC = F16 | IOSTANDARD = LVCMOS33;               # "PMOD1_P2"
+#NET PMOD1_P3          LOC = C17 | IOSTANDARD = LVCMOS33;               # "PMOD1_P3"
+#NET PMOD1_P4          LOC = C18 | IOSTANDARD = LVCMOS33;               # "PMOD1_P4"
+#NET PMOD1_P7          LOC = F14 | IOSTANDARD = LVCMOS33;               # "PMOD1_P7"
+#NET PMOD1_P8          LOC = G14 | IOSTANDARD = LVCMOS33;               # "PMOD1_P8"
+#NET PMOD1_P9          LOC = D17 | IOSTANDARD = LVCMOS33;               # "PMOD1_P9"
+#NET PMOD1_P10         LOC = D18 | IOSTANDARD = LVCMOS33;               # "PMOD1_P10"
+# Connector J4
+#NET PMOD2_P1          LOC = H12 | IOSTANDARD = LVCMOS33;               # "PMOD2_P1"
+#NET PMOD2_P2          LOC = G13 | IOSTANDARD = LVCMOS33;               # "PMOD2_P2"
+#NET PMOD2_P3          LOC = E16 | IOSTANDARD = LVCMOS33;               # "PMOD2_P3"
+#NET PMOD2_P4          LOC = E18 | IOSTANDARD = LVCMOS33;               # "PMOD2_P4"
+#NET PMOD2_P7          LOC = K12 | IOSTANDARD = LVCMOS33;               # "PMOD2_P7"
+#NET PMOD2_P8          LOC = K13 | IOSTANDARD = LVCMOS33;               # "PMOD2_P8"
+#NET PMOD2_P9          LOC = F17 | IOSTANDARD = LVCMOS33;               # "PMOD2_P9"
+#NET PMOD2_P10         LOC = F18 | IOSTANDARD = LVCMOS33;               # "PMOD2_P10"
