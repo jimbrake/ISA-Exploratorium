@@ -4,7 +4,8 @@ Designs of all varieties including RISC, CISC, stack and accumulator
 They are in various stages of completion  
 With ~six having working test benches  
 ### A work in progess  
-
+Beware many of the projects and their ISAs in _all_projects are incomplete  
+Use the spreadsheet to examine their status  
 ## _all_projects  
 Project files for individual designs  
 Often containing numerals for data and instruction size  
@@ -13,12 +14,13 @@ There has been an evolution of design criterial over time (30+ years)
 Thus each project has a prefix giving the year of the first basic description  
 
 ### A complete design has:
-README.md  
+README.md and  
 A "glossy" documentation file containing a basic description  
 A formal doc file containing a full description of each instruction, addressing modes and memory layout  
 A spreadsheet file listing all the instructions and their encoding  
 A business case file giving the rational  
-A FPGA project/zip file containing RTL source, constraint file, testbench  
+FPGA project/zip archive file containing RTL source, constraint file, testbench  
+PDF versions of spreadsheet sheets are included for ease of review and printout  
 
 Needless to say, only a few designs are this complete  
 And one would like to have an assembler and compiler as well  
@@ -53,7 +55,7 @@ An attempt to provide RISC, CISC, Stack and Accumulator instructions within a si
 ## ROIS aka ROC  
 Register Oreinted Instructon Set, typical RISC with 24-bit and larger instructions  
 Name changed to ROC (Register Oriented Computer) for better pronounciation and dramatic effect  
-### ROIS24_24 is complete  
+### ROIS24_24min is complete  
 
 ## TROC  
 Tagged Register Oriented Computer  
