@@ -25,7 +25,7 @@ Stack machine, RISC machine, CISC machine, Accumulator machine and a macro capab
 - **2018_ALT_x86** *x86 without prefix codes, typically 24-bit instructions*  
 - **2020_OOSM** *One Operand Stack Machine generic architecture*  
 - **2021_ALT_11** *The DEC PDP-11 with fewer address modes and more registers. Address, register and instruction sizes increased allowing a more complete ISA while retaining some 16-bit instructions*  
-- **2021_ROC32_8** *First ISA to use residue register instead of status bits*  
+- **2021_ROC32_8** *Last of the RISC designs without a residue register, 24 & 32-bit instructions*  
 - **2024_TROC16** *Registers in register file have tag bits for data type.  16-bit data & instructions only.*  
 - **2024_TROC24** *Registers in register file have tag bits for data type.  8, 16 & 24-bit data; four data types; 16, 24 & 32-bit instructions*  
 - **2025_BROCC** *Block RAM oriented stack machine of the OOSM variety.  Stack locations are addressable*  
