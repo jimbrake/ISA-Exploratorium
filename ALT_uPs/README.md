@@ -41,8 +41,9 @@ Accumulator, auxillary register (Q) and six index regsiters all of the same bit 
 Most instructions retainded.  2's complement instead of one's complement  
 
 ### *alt_1620*  
-#### Derived from IBM 1620 varialble length decimal computer  
+#### Derived from IBM 1620 variable length decimal computer  
 See *radix10* aka **BCD1** and *radix100* aka **BCD2**  
+
 
 
 
