@@ -6,7 +6,7 @@ With ~six having working test benches
 Many files have a six digit date suffix of year, month and day  
 ### A work in progess  
 Beware many of the projects and their ISAs in _all_projects are incomplete  
-Use the spreadsheet to examine their status  
+Use the spreadsheet in **_all_projects** to examine their status  
 ## _all_projects  
 Project files for individual designs  
 Often containing numerals for data and instruction size  
