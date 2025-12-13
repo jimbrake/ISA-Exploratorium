@@ -32,6 +32,9 @@ No prefix codes
 A register file of 16 registers and x86 addressing modes
 No MMX instructions at this time  
 
+### *alt_RISC-v* or *alt_MIPS*  
+#### RISC machines with 24-bit instructions, four data types and four data sizes  
+See **RIOS**, **ROC** or **TROC**
 ### alt_1604  
 #### Derived from CDC 1604 scientific computer  
 Accumulator, auxillary register (Q) and six index regsiters all of the same bit length  
@@ -39,5 +42,6 @@ Most instructions retainded.  2's complement instead of one's complement
 
 ### alt_1620  
 #### Derived from IBM 1620 varialble length decimal computer  
-See *radix10* aka **BCD** and *radix100* aka **BCD2** ISAs  
+See *radix10* aka **BCD1** and *radix100* aka **BCD2** ISAs  
+
 
