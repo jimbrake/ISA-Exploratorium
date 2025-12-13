@@ -1,5 +1,5 @@
 ## Directory of all ISA-Exploratorium prjoects  
-### **Microprocessors (uP) of various styles** to measure their implementation complexity and performance  
+#### **Microprocessors (uP) of various styles** to measure their implementation complexity and performance  
 #### They are prefixed by the orignination year Many are in various states of completion Check the xlsx file & its PDF sheets for detailed status  
 - **1999_BCD1** *A different take on the IBM 1620, a variable length BCD digit at a time computer*  
 - **1999_LEM1_9min** *A truly minimal bit at a time processor*  
