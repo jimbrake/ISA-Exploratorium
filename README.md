@@ -75,7 +75,7 @@ Dual port block RAM arranged for single cycle readout of unaligned instructions 
 No micrco-code, no data path planning  
 Common sub-expressions identified by assignment to a distinct name  
 Separate register update process  
-In the case of TROC instructions defined/expressed via three nested case statements  
+TROC instructions defined/expressed via three nested case statements  
 -Instruction size, e.g. a section for each instruction size  
 --Each distinct instruction with some merged  
 ---Each data type as needed  
